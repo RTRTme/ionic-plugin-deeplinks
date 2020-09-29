@@ -200,7 +200,7 @@ var IonicDeeplink = {
    * This method tries to infer what the proper "path" is from the URL
    */
   _getRealPath: function (data) {
-
+    var self = this; //BUG WAS HERE
     // 1. Let's just do the obvious and return the parsed 'path' first, if available.
     if (!!data.path && data.path !== "") {
       return data.path;
