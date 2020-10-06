@@ -14,7 +14,7 @@
 
 	<!-- android -->
 	<platform name="android">
-	
+		<preference name="ANDROID_PATH_PREFIX" default="/" />
 		<js-module src="www/deeplink.js" name="deeplink">
 			<runs/>
 			<clobbers target="IonicDeeplink" />
